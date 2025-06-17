@@ -1,7 +1,7 @@
 {% set name = "hashery" %}
 {% set version = "2.1.2" %}
 {% set sha256 = "d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862" %}
-{% set build_number = "2" %}
+{% set build = 2 %}
 
 package:
   name: rb-{{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: generic
-  number: {{ build_number }}
+  number: {{ build }}
   script:
     - gem install -N -l -V --norc --ignore-dependencies -n $PREFIX/bin {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
