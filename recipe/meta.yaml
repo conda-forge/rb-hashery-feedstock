@@ -1,7 +1,7 @@
 {% set name = "hashery" %}
-{% set version = "2.1.2" %}
-{% set hash = "d239cc2310401903f6b79d458c2bbef5bf74c46f3f974ae9c1061fb74a404862" %}
-{% set build = 2 %}
+{% set version = "2.2.2" %}
+{% set hash = "786b64d98ecb889caa854c7dc916ee016a87c817a7af0dd8d0df66bb585f19e5" %}
+{% set build = 0 %}
 
 package:
   name: rb-{{ name|lower }}
